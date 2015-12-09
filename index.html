@@ -15,14 +15,11 @@
     <body onload="setup()">
         <h1>Generate your own meme</h1>
         
-        <div>
-            <span>Upload an image:</span><br/>
-            <input type="file" id="file" />  
-        </div>
-        
         <div id="image-container">
-            <canvas id="myCanvas" width="500px" height="500px"></canvas>
             <div>
+                <span>Upload an image:</span><br/>
+                <input type="file" id="file" /><br/>
+                
                 <span>Top line text:</span><br/>
                 <input id="topLineText" type="text"><br/>
 
@@ -31,6 +28,7 @@
 
                 <a id="downloadLink" download="meme.jpg"><button id="saveBtn">Save</button></a>
             </div>
+            <canvas id="myCanvas" width="500px" height="500px"></canvas>
         </div>
         
         <script src="app.js"></script>

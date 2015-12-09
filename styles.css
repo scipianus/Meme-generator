@@ -3,7 +3,11 @@ body {
 }
 h1 {
     font-family: "Helvetica", "Times New Roman";
-    margin: 10px;
+    margin: 15px;
+}
+span {
+    font-family: "Times New Roman";
+    font-size: 20px;
 }
 div {
     margin: 10px;

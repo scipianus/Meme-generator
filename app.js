@@ -15,8 +15,8 @@ function redrawMeme(image, topLine, bottomLine) {
         context.strokeText(topLine, canvas.width / 2, 50, canvas.width);
     }
     if (bottomLine !== null) {
-        context.fillText(bottomLine, canvas.width / 2, canvas.height - 50, canvas.width);
-        context.strokeText(bottomLine, canvas.width / 2, canvas.height - 50, canvas.width);
+        context.fillText(bottomLine, canvas.width / 2, canvas.height - 15, canvas.width);
+        context.strokeText(bottomLine, canvas.width / 2, canvas.height - 15, canvas.width);
     }
 }
 
