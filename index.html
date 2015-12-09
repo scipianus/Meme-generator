@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Meme generator</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        
+        <link href="styles.css" rel="stylesheet">
+    
+    </head>
+    
+    <body onload="setup()">
+        <h1>Generate your own meme</h1>
+        
+        <div>
+            <span>Upload an image:</span><br/>
+            <input type="file" id="file" />  
+        </div>
+        
+        <div id="image-container">
+            <canvas id="myCanvas" width="500px" height="500px"></canvas>
+            <div>
+                <span>Top line text:</span><br/>
+                <input id="topLineText" type="text"><br/>
+
+                <span>Bottom line text:</span><br/>
+                <input id="bottomLineText" type="text"><br/>
+
+                <a id="downloadLink" download="meme.jpg"><button id="saveBtn">Save</button></a>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
